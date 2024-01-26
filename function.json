@@ -1,0 +1,31 @@
+{
+    "scriptFile": "funtion_app.py",
+    "bindings": [
+        {
+            "name": "req",
+            "type": "httpTrigger",
+            "direction": "in",
+            "authLevel": "anonymous",
+            "methods": ["get"],
+            "route": "weather/{city}"
+        },
+        {
+            "name": "$return",
+            "type": "http",
+            "direction": "out"
+        },
+        {
+            "name": "req",
+            "type": "httpTrigger",
+            "direction": "in",
+            "authLevel": "anonymous",
+            "methods": ["get"],
+            "route": "get_time"
+        },
+        {
+            "name": "$return",
+            "type": "http",
+            "direction": "out"
+        }
+    ]
+}
